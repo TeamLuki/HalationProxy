@@ -1,16 +1,22 @@
 {
-  "name": "mcproxy-server",
+  "name": "halationproxy",
   "version": "1.0.0",
-  "description": "Goes with the RealmsProxy Launcher",
+  "description": "Goes with my HalationLauncher",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cd lib && node start.js && cd ..",
+    "test": "echo \"There are no tests, sorry. If you want to make a test \n, I'm to lazy to do it myself, so make a pull request with your own test.\""
   },
   "author": "Atmatm6",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.2",
+    "lodash.foreach": "^4.5.0",
     "minecraft-protocol": "^1.4.1",
-    "sqlite3": "^3.1.13"
+    "node-ipc": "^9.1.1",
+    "pg": "^7.4.0",
+    "portfinder": "^1.0.13",
+    "ws": "^3.3.2"
   },
   "devDependencies": {}
 }
